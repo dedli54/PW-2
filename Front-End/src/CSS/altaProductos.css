@@ -1,0 +1,10 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    margin: 5%;
+}
+
+.coustome-link{
+    margin: 2%;
+}

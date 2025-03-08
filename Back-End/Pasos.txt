@@ -1,0 +1,39 @@
+>Primero Instalar express:
+npm init
+npm install
+npm install express
+
+
+>Segundo instalamos prisma con mysql2:
+npm install express prisma @prisma/client mysql2
+npx prisma init
+- Configuramos el datasource y definimos el esquema (modelos)
+- ejemplo de modelo:
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+}
+
+- Migramos la BDD: npx prisma migrate dev --name init  //aqui generamos las tablas
+npx prisma generate //aqui generamos el cliente prisma
+
+
+>Tercero creamos el servidor con espress: index.js
+
+Luego de agregar más modelos:
+npx prisma generate
+npx prisma migrate dev --name init (init como nombre de la mig)
+npx prisma studio //para comprobar que se crearon los modelos
+
+Creamos carpetas src/+
+Creamos app.js e index.js
+Creamos scripts en package.json
+
+-Cuarto creamos las rutas de las tablas/Entidades
+
+
+-checamos con: npm start o npm dev
+

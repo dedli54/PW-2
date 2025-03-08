@@ -1,0 +1,9 @@
+.coustome-link{
+    color: #BFBBB8;
+    text-decoration: none;
+}
+
+.coustome-link:hover{
+    color: #2B7B8C;
+    background-color: #BFBBB8;
+}

@@ -1,0 +1,37 @@
+body{
+    background-image: url(images/white-paper-texture.jpg);
+}
+.fondo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    box-shadow: 5px 5px #0D0D0D;
+    margin: 10%;
+    border-radius: 20px;
+}
+
+.col-6{
+    margin: 20px;
+}
+
+input{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    color: #0D0D0D;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    padding: 5%;
+}
+
+.coustome-link{
+    color: #BFBBB8;
+    text-decoration: none;
+}
+
+.coustome-link:hover{
+    color: #2B7B8C;
+    background-color: #BFBBB8;
+}

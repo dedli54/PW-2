@@ -1,0 +1,14 @@
+h3{
+    color: black;
+    text-shadow: 5px 5px 5px rgb(110, 107, 107);
+}
+
+.promo{
+    color: black;
+    text-shadow: 5px 5px 5pcx rgb(110, 107, 107);
+}
+
+.imageArreglo{
+    width: 100%;
+    padding: 7%;
+}
