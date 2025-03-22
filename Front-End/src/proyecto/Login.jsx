@@ -72,7 +72,7 @@ function Login(){
                                 onChange={(e)=> setPass(e.target.value)}/>
                             </FloatingLabel>
                             <br />
-                            <Button className="coustome-link">Iniciar Sesión</Button>
+                            <Button onClick={handleLogin} className="coustome-link">Iniciar Sesión</Button>
                             <br />
                         <p>¿Aún no tienes tu cuenta?</p>
                         <Button href ="/registro" className="coustome-link">Registrate aquí</Button>

@@ -84,7 +84,7 @@ function Registro(){
                             </FloatingLabel>
                         </div>
                         <div>
-                            <Button className="coustome-link">Registrar</Button>
+                            <Button onClick={sendDatos} className="coustome-link">Registrar</Button>
                         </div>
                         <br/>
                         <p>¿Ya tienes cuenta?</p>

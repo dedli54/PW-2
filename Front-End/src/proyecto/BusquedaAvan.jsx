@@ -43,7 +43,7 @@ function BusquedaAvan() {
           console.error('Error al buscar el producto:', error);
           setResultado([]);
           if (error.response && error.response.status === 404) {
-            setErrorBusqueda('No hay base de datos');
+            setErrorBusqueda('No se encontraron productos que coincidan con los criterios de búsqueda');
           } else {
             setErrorBusqueda('Ocurrió un error al realizar la búsqueda');
           }
@@ -85,7 +85,7 @@ function BusquedaAvan() {
             />
           </Form.Group>
           <div className='boton'>
-            <Button className='coustome-link'>Buscar</Button>
+            <Button type="submit" className='coustome-link'>Buscar</Button>
           </div>
         </Row>
       </Form>

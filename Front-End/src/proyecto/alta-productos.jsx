@@ -99,7 +99,7 @@ function AltaProductos() {
             </Form.Group>
             
             <div className='boton'>
-            <Button className='coustome-link' >Agregar</Button>
+            <Button type="submit" className='coustome-link' onClick={handleAdd}>Agregar</Button>
             
             <Button href={"/Miperfil"} className='coustome-link'>Regresar</Button>
             </div>

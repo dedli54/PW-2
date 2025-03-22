@@ -51,8 +51,7 @@ function MetodoPago(){
                     <FloatingLabel controlId="floatingDate" label="Fecha de vencimiento" className="mb-3" id="fecha">
                         <Form.Control type="month" onChange={(e) => setFecha(e.target.value)} required/>
                     </FloatingLabel>
-                <Button  className="coustome-link">Aceptar cambios</Button>
-               
+                <Button  className="coustome-link" onClick={handleAdd}>Aceptar cambios</Button>
                 <br/>
                 <br/>
                 <Button href={"/lista-compras"} className="coustome-link">Cancelar</Button>
