@@ -88,7 +88,7 @@ function Miperfil(){
                     <Button href={"/alta-productos"} className="coustome-link">Agregar producto</Button>
                     <br />
                     <br />
-                <Button id="btnCambios" className="coustome-link" >Aceptar cambios</Button>
+                <Button id="btnCambios" className="coustome-link" onClick={handleUpdate}>Aceptar cambios</Button>
                 <br/>
                 <br/>
                 <Button href={"/lista-compras"} className="coustome-link">Cancelar</Button>
