@@ -23,9 +23,9 @@ function BusquedaAvan() {
       event.stopPropagation();
     } else {
       const params = {};
-      if (nombreProducto) params.name = nombreProducto;
-      if (precioProducto) params.price = precioProducto;
-      if (categoriaProducto) params.categoryName = categoriaProducto;
+      if (nombreProducto) params.nombre = nombreProducto;
+      if (precioProducto) params.precio = precioProducto;
+      if (categoriaProducto) params.categoria = categoriaProducto;
 
       if (Object.keys(params).length === 0) {
         setErrorBusqueda('Por favor, ingresa al menos un criterio de búsqueda');
@@ -35,8 +35,9 @@ function BusquedaAvan() {
 
       axios.get("http://localhost:3000/productos/s", { params })
         .then(response => {
-          setResultado(response.data);
-
+          setResultado([response.data]); // Cambiado a un array para evitar errores al mostrarlo en la pagina
+          console.log('Parámetros enviados:', params); //muestra en consola los parámetros enviados
+          console.log('Respuesta del backend:', response.data); //muestra en consola la respuesta del backend
           setErrorBusqueda('');
         })
         .catch(error => {
@@ -85,12 +86,12 @@ function BusquedaAvan() {
             />
           </Form.Group>
           <div className='boton'>
-            <Button type="submit" className='coustome-link'>Buscar</Button>
+            <Button onClick={handleSubmit} type="submit" className='coustome-link'>Buscar</Button>
           </div>
         </Row>
       </Form>
 
-      {resultado.length > 0 && (
+      {resultado && (
         <div>
           <h2>Resultados:</h2>
           {resultado.map((producto, index) => (
@@ -125,7 +126,7 @@ function BusquedaAvan() {
                   <Form.Control
                     placeholder="Categoría"
                     readOnly
-                    value={producto.categoryName}
+                    value={producto.categoriaNombre}
                   />
                 </Form.Group>
               </Row>

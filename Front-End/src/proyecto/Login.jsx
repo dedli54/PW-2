@@ -22,24 +22,24 @@ function Login(){
             return;
         } else{
             axios.post("http://localhost:3000/login", {
-                email: email, 
-                pass: pass
-            })
-            .then((data) => {
-                console.log(data);
-                if(data.data.success){
-                    setMessage(data.data.message);
-                    localStorage.setItem('sesion', JSON.stringify(data.data.usuario));
-                    console.log("Inicio de sesión exitoso");
-                    setLoggedIn(true);
-                }else{
-                    setMessage("Credenciales incorrectas");
-                    setLoggedIn(false);
-                }
-            })
-            .catch((error)=> {
-                setMessage(`Error al iniciar sesión: ${error.message}`);
-            });
+    email: email, 
+    pass: pass
+})
+.then((data) => {
+    console.log(data);
+    if (data.data.success && data.data.usuario) { // Validar que 'usuario' no sea null
+        setMessage(data.data.message);
+        localStorage.setItem('sesion', JSON.stringify(data.data.usuario));
+        console.log("Inicio de sesión exitoso");
+        setLoggedIn(true);
+    } else {
+        setMessage("Credenciales incorrectas o datos incompletos");
+        setLoggedIn(false);
+    }
+})
+.catch((error) => {
+    setMessage(`Error al iniciar sesión: ${error.message}`);
+});
             console.log("loggedIn:", loggedIn);
             return;
         }

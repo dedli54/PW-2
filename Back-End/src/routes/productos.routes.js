@@ -74,14 +74,14 @@ router.get("/productos", async (req, res) => {
       const whereClause = {};
   
       if (nombre) {
-        whereClause.name = { contains: nombre, mode: 'insensitive' };
+        whereClause.name = { contains: nombre };
       }
       if (precio) {
         whereClause.price = parseFloat(precio);
       }
       if (categoria) {
         whereClause.category = {
-          name: { contains: categoria, mode: 'insensitive' },
+          name: { contains: categoria },
         };
       }
   
