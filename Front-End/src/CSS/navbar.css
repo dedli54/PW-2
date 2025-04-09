@@ -1,0 +1,61 @@
+.navbar-custom {
+    background-color: #4A90E2; /* Fondo azul claro */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 10px 0;
+    border-bottom: 3px solid #FFD166; /* Borde amarillo cálido */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .nav-dropdown {
+    color: #FFFFFF; /* Texto blanco */
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .dropdown-item:hover {
+    color: #333333; /* Texto negro suave al pasar el mouse */
+    background-color: #A8E6CF; /* Fondo verde menta al pasar el mouse */
+}
+
+.navbar-custom .btn-outline-success {
+    color: #FFFFFF; /* Texto blanco */
+    border-color: #FFFFFF; /* Borde blanco */
+}
+
+.navbar-custom .btn-outline-success:hover {
+    color: #4A90E2; /* Texto azul claro */
+    background-color: #FFFFFF; /* Fondo blanco */
+    border-color: #FFFFFF; /* Borde blanco */
+}
+
+.navbar-custom .navbar-brand {
+    margin: 0 auto; /* Centra el título horizontalmente */
+    color: #FFD166; /* Color amarillo cálido */
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar-custom .nav-link {
+    margin-right: 15px; /* Espacio a la derecha de cada enlace */
+    margin-left: 15px; /* Espacio a la izquierda de cada enlace */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+.navbar-custom .nav-link:hover {
+    color: #A8E6CF; /* Verde menta al pasar el mouse */
+}
+
+.navbar-custom .d-flex {
+    margin-left: 20px; /* Espacio entre el formulario y los enlaces */
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .dropdown-item:hover {
+    color: #333333; /* Texto negro suave */
+    background-color: #A8E6CF; /* Fondo verde menta */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 5px 10px; /* Agrega un poco de espacio interno para que se vea mejor */
+}

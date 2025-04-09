@@ -1,14 +1,24 @@
-h3{
-    color: black;
-    text-shadow: 5px 5px 5px rgb(110, 107, 107);
-}
-
-.promo{
-    color: black;
-    text-shadow: 5px 5px 5pcx rgb(110, 107, 107);
-}
-
-.imageArreglo{
+.imageArreglo {
     width: 100%;
     padding: 7%;
+}
+
+.promo {
+    color: #333333;
+    font-size: 16px;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #4A90E2;
+    font-weight: bold;
+    margin-bottom: 20px;
 }

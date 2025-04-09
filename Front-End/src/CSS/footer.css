@@ -1,0 +1,33 @@
+/* Fondo del footer */
+.footer-custom {
+    background-color: #4A90E2; /* Azul claro */
+    color: #FFFFFF; /* Texto blanco */
+    border: none; /* Elimina el borde del Card */
+    border-radius: 0; /* Asegura que el footer sea rectangular */
+    text-align: center; /* Centra el texto */
+    padding: 20px;
+}
+
+/* Estilo del encabezado del footer */
+.footer-header {
+    background-color: #FFFFFF; /* Blanco */
+    color: #4A90E2; /* Amarillo cálido */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Texto del footer */
+.footer-custom .card-text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* Título del footer */
+.footer-custom .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

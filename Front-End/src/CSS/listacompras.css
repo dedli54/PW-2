@@ -1,16 +1,61 @@
 .container-lista{
-    background-color: #f2f2f2;
+    background-color: #4A90E2;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px #7d858C;
     display: flex;
     margin: 3%;
     padding: 5%;
     align-items: center;
 }
 
-h1{
+.container-lista:hover{
+    background-color: #A8E6CF;
+    box-shadow: 5px 5px 5px #333333;
+}
+.container-lista h2{
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 0;
+}
+.container-lista p{
+    color: #FFFFFF;
+    font-size: 15px;
+    margin: 0;
+}
+
+h1 {
+    color: #FFD166; /* Color del texto */
     text-align: center;
     padding: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #333333; /* Sombra negra suave */
+}
+
+h3{
+    text-align: center;
+    padding: 10px;
+}
+
+.row h1{
+    color: #FFD166; /* Color del texto */
+    text-align: center;
+    padding: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    /*Fondo de la barra de navegación*/
+    background-color: #4A90E2; /* Azul claro */
+    /*Sombra de la barra de navegación*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    /*Borde de la barra de navegación*/
+    
+}
+
+.container-lista h3 {
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+.container-lista:hover h2{
+    color: #333333;
 }
 
 .container-images{
@@ -24,3 +69,5 @@ footer{
     color: black;
     background-color: #7d858C;
 }
+
+/* Colores a usar: #4A90E2, #A8E6CF, #F5F5F5, #F5F5F5, #333333, #FFFFFF */

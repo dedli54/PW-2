@@ -3,10 +3,11 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import { Navbar, Nav, NavDropdown, Col, Row, Button } from "react-bootstrap";
 import icon from "../CSS/images/list.png"; // Importa la imagen correctamente
+import '../CSS/navbar.css';
 
 function BarraNav() {
     return (
-        <Navbar className="bg-body-tertiary">
+        <Navbar className="navbar-custom">
             <Container fluid={true} className="m-0 p-0">
                 <Navbar.Brand href="#">
                     <img src={icon} alt="Shopping logo" width={30} height={30} className="d-inline-block align-top" />

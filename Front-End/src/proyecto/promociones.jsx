@@ -25,7 +25,7 @@ function Promociones() {
                         <Image className='imageArreglo' src={switcho} alt="Promoción celulares" fluid />
                         <Carousel.Caption>
                             <h3>Revisa nuestra sección de electrónica</h3>
-                            <p className="promo">¡Todo lo que bucas para tu hogar!</p>
+                            <p className="promo">¡Todo lo que buscas para tu hogar!</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -41,6 +41,7 @@ function Promociones() {
             </div>
 
             <div style={{ textAlign: 'center', padding: '20px', backgroundColor: '#f8f9fa' }}>
+                <h2 style={{ color: '#4A90E2', marginBottom: '20px' }}>Nuestros Productos</h2>
                 <Productos />
             </div>
         </div>

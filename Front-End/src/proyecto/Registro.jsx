@@ -45,53 +45,62 @@ function Registro(){
         </div>
     );
 
-    return(
-        //Primera división para colocar la imagen del proyecto
+    return (
         <div className="fondo">
             <div className="container">
-                <div className="row">
-                    <div className="col-4">
-                        <div>
-                            <h1>Chopin List</h1>
-                            <img src={icono} alt="icono" height={200} width={200}/>
-                        </div>
+                {/* Fila para el título y la imagen */}
+                <div className="row text-center mb-4">
+                    <div className="col-12">
+                        <h1>Chopin List</h1>
+                        <img src={icono} alt="icono" height={150} width={150} />
                     </div>
-
-                    <>
-                    <div className="col-6">
+                </div>
+    
+                {/* Fila para el formulario */}
+                <div className="row">
+                    <div className="col-md-12">
                         <h2>Crea un Usuario</h2>
-                        <br/>
-                        <div>
-                            <FloatingLabel controlId="floatingName" label="Nombre" className="mb-3">
-                                <Form.Control type="text" placeholder="Nombre"
+                        <FloatingLabel controlId="floatingName" label="Nombre" className="FloatingInput">
+                            <Form.Control
+                                type="text"
+                                placeholder="Nombre"
                                 value={name}
-                                onChange={(e)=> setName(e.target.value)}/>
-                            </FloatingLabel>
-                            <FloatingLabel controlId="floatingLastName" label="Apellidos" className="mb-3">
-                                <Form.Control type="text" placeholder="Apellidos"
+                                onChange={(e) => setName(e.target.value)}
+                            />
+                        </FloatingLabel>
+                        <FloatingLabel controlId="floatingLastName" label="Apellidos" className="FloatingInput">
+                            <Form.Control
+                                type="text"
+                                placeholder="Apellidos"
                                 value={lastName}
-                                onChange={(e)=> setLastName(e.target.value)}/>
-                            </FloatingLabel>
-                            <FloatingLabel controlId="floatingEmail" label="Correo Electrónico" className="mb-3">
-                                <Form.Control type="email" placeholder="name@example.com" 
+                                onChange={(e) => setLastName(e.target.value)}
+                            />
+                        </FloatingLabel>
+                        <FloatingLabel controlId="floatingEmail" label="Correo Electrónico" className="FloatingInput">
+                            <Form.Control
+                                type="email"
+                                placeholder="name@example.com"
                                 value={email}
-                                onChange={(e)=> setEmail(e.target.value)}/>
-                            </FloatingLabel>
-                            <FloatingLabel controlId="floatingPass" label="Contraseña" className="mb-3">
-                                <Form.Control type="password" placeholder="Contraseña"
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                        </FloatingLabel>
+                        <FloatingLabel controlId="floatingPass" label="Contraseña" className="FloatingInput">
+                            <Form.Control
+                                type="password"
+                                placeholder="Contraseña"
                                 value={pass}
-                                onChange={(e)=> setPass(e.target.value)}/>
-                            </FloatingLabel>
-                        </div>
-                        <div>
+                                onChange={(e) => setPass(e.target.value)}
+                            />
+                        </FloatingLabel>
+                        <div className="text-center">
                             <Button onClick={sendDatos} className="coustome-link">Registrar</Button>
                         </div>
-                        <br/>
                         <p>¿Ya tienes cuenta?</p>
-                        <Button href ="/Login" className="coustome-link">Iniciar sesión</Button>
+                        <div className="text-center">
+                            <Button href="/Login" className="coustome-link">Iniciar sesión</Button>
+                        </div>
+                        {message && <p className={registroExitoso ? "message-success" : "message-error"}>{message}</p>}
                     </div>
-                    {message && <p>{message}</p>}
-                    </>
                 </div>
             </div>
         </div>

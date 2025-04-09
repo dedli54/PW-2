@@ -1,37 +1,53 @@
-body{
-    background-image: url(images/white-paper-texture.jpg);
+body { 
+    background-color: #F5F5F5; /* Fondo gris claro para el resto de la página */
+    margin: 0;
+    padding: 0;
 }
-.fondo{
+
+.fondo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #f2f2f2;
-    box-shadow: 5px 5px #0D0D0D;
-    margin: 10%;
-    border-radius: 20px;
+    background-color: #FFFFFF; /* Fondo blanco para el formulario */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: 5% auto; /* Centra el contenedor */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 30px; /* Espaciado interno */
+    width: 400px; /* Ancho fijo para el formulario */
+    text-align: center; /* Centra el contenido */
 }
 
-.col-6{
-    margin: 20px;
+input {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid #CCCCCC; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    margin-bottom: 15px; /* Espaciado entre campos */
+    color: #333333; /* Texto negro suave */
 }
 
-input{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+button {
+    background-color: #4A90E2; /* Azul claro */
+    color: #FFFFFF; /* Texto blanco */
     border: none;
-    color: #0D0D0D;
+    padding: 10px 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    margin: 10%;
-    padding: 5%;
+button:hover {
+    background-color: #A8E6CF; /* Verde menta al pasar el mouse */
+    color: #333333; /* Texto negro suave */
 }
 
-.coustome-link{
-    color: #BFBBB8;
+.coustome-link {
+    color: #4A90E2; /* Azul claro */
     text-decoration: none;
+    font-weight: bold;
 }
 
-.coustome-link:hover{
-    color: #2B7B8C;
-    background-color: #BFBBB8;
+.coustome-link:hover {
+    color: #A8E6CF; /* Verde menta */
+    text-decoration: underline;
 }

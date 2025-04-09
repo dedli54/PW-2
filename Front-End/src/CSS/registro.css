@@ -1,14 +1,80 @@
-.fondo{
-    background-color: #f2f2f2;
-}
-input{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #0D0D0D;
-    width: 100%;
+body {
+    background-color: #F5F5F5; /* Fondo gris claro */
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.fondo {
+    background-color: #FFFFFF; /* Fondo blanco */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 30px; /* Espaciado interno */
+    margin: 5% auto; /* Centra el contenedor */
+    width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+    max-width: 1000px; /* Ancho máximo para pantallas grandes */
+}
 
-.coustome-link{
-    background-color: #2B7B8C;
-    color: #BFBBB8;
+.FloatingInput {
+    margin-bottom: 20px; /* Espaciado entre los campos */
+}
+
+button.coustome-link {
+    margin-top: 20px; /* Espaciado superior para los botones */
+}
+
+p {
+    margin-top: 15px; /* Espaciado superior para los párrafos */
+}
+
+h1 {
+    color: #FFD166; /* Amarillo cálido */
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    color: #4A90E2; /* Azul claro */
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.FloatingInput {
+    margin-bottom: 15px; /* Espaciado entre los campos */
+}
+
+button.coustome-link {
+    background-color: #4A90E2; /* Azul claro */
+    color: #FFFFFF; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.coustome-link:hover {
+    background-color: #A8E6CF; /* Verde menta al pasar el mouse */
+    color: #333333; /* Texto negro suave */
+}
+
+p {
+    color: #333333; /* Texto negro suave */
+    text-align: center;
+    margin-top: 15px;
+}
+
+.message-success {
+    color: #4CAF50; /* Verde para mensajes de éxito */
+    font-weight: bold;
+    text-align: center;
+}
+
+.message-error {
+    color: #FF6B6B; /* Rojo para mensajes de error */
+    font-weight: bold;
+    text-align: center;
 }

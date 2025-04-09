@@ -40,6 +40,7 @@ Creamos scripts en package.json
 
 
 -GUIA RAPIDA PARA EMPEZAR
+
 EN LA RUTA DE BACK:
 --Crear archivo .env con lo siguiente:
 DATABASE_URL="mysql://root:1234@localhost:3307/pw2_bd" //sustituimos valores para nuestra base de datos local

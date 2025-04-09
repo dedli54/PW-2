@@ -52,36 +52,32 @@ function Login(){
     return(
         <>
     <div className="image">
-        <div className="fondo">
-            <div className="container">
-                <div className="row">
-                    <div className="col-4">
-                        <h1>Chopin List</h1>
-                        <img src={icono} alt="icono" height={200} width={200}/>
-                    </div>
-                    <div className="col-6">
-                        <h2>Iniciar sesión</h2>
-                            <FloatingLabel controlId="floatingEmail" className = "FloatingInput" label="Correo electrónico" id="CorreoLogin">
-                                <Form.Control type="email" placeholder="name@example.com"
-                                value={email}
-                                onChange={(e)=> setEmail(e.target.value)}/>
-                            </FloatingLabel>
-                            <FloatingLabel controlId="floatingPassword" className = "FloatingInput" label="Contraseña" id="PasswordLogin">
-                                <Form.Control type="password" placeholder="Password"
-                                value={pass}
-                                onChange={(e)=> setPass(e.target.value)}/>
-                            </FloatingLabel>
-                            <br />
-                            <Button onClick={handleLogin} className="coustome-link">Iniciar Sesión</Button>
-                            <br />
-                        <p>¿Aún no tienes tu cuenta?</p>
-                        <Button href ="/registro" className="coustome-link">Registrate aquí</Button>
-                    </div>
-                </div>
-            </div>
-            {message && <p>{message}</p>}
-        </div>
+    <div className="fondo">
+        <h1>Chopin List</h1>
+        <img src={icono} alt="icono" height={100} width={100} />
+        <h2>Iniciar sesión</h2>
+        <FloatingLabel controlId="floatingEmail" className="FloatingInput" label="Correo electrónico">
+            <Form.Control
+                type="email"
+                placeholder="name@example.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+            />
+        </FloatingLabel>
+        <FloatingLabel controlId="floatingPassword" className="FloatingInput" label="Contraseña">
+            <Form.Control
+                type="password"
+                placeholder="Password"
+                value={pass}
+                onChange={(e) => setPass(e.target.value)}
+            />
+        </FloatingLabel>
+        <Button onClick={handleLogin} className="coustome-link">Iniciar Sesión</Button>
+        <p>¿Aún no tienes tu cuenta?</p>
+        <Button href="/registro" className="coustome-link">Regístrate aquí</Button>
+        {message && <p>{message}</p>}
     </div>
+</div>
         </>
     );
 }

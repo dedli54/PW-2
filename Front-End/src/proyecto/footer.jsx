@@ -1,11 +1,12 @@
 import React from "react";
-import {Card, CardBody, CardHeader} from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import '../CSS/footer.css';
 
-function Footer(){
-    return(
-        <Card bg="secondary" text="white">
-            <CardHeader>Proyecto de programación web ll</CardHeader>
-            <CardBody>
+function Footer() {
+    return (
+        <Card className="footer-custom">
+            <Card.Header className="footer-header">Proyecto de programación web II</Card.Header>
+            <Card.Body>
                 <Card.Title>Integrantes del equipo:</Card.Title>
                 <Card.Text>
                     Alberto Adrian Garcia Camacho, 
@@ -13,13 +14,13 @@ function Footer(){
                     ChatGTP, 
                     GeminiAI, 
                     La wea de china, 
-                    Otras ai, 
+                    Otras AI, 
                     Las clases del profe
                 </Card.Text>
                 <Card.Text>
                     Chopin List 1929
                 </Card.Text>
-            </CardBody>
+            </Card.Body>
         </Card>
     );
 }
