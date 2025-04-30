@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center; /* Centra el contenido verticalmente */
-    padding: 10px 0;
+    padding: 0.0rem 0;  /* Agrega vertical padding */
     border-bottom: 3px solid #FFD166; /* Borde amarillo cálido */
 }
 
@@ -31,7 +31,7 @@
 }
 
 .navbar-custom .navbar-brand {
-    margin: 0 auto; /* Centra el título horizontalmente */
+    margin-right: 2rem;
     color: #FFD166; /* Color amarillo cálido */
     font-size: 28px;
     font-weight: bold;
@@ -39,8 +39,10 @@
 }
 
 .navbar-custom .nav-link {
-    margin-right: 15px; /* Espacio a la derecha de cada enlace */
-    margin-left: 15px; /* Espacio a la izquierda de cada enlace */
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin-right: 15px; /* Espacio a la derecha de each enlace */
+    margin-left: 15px; /* Espacio a la izquierda de each enlace */
     color: #FFFFFF; /* Texto blanco */
 }
 
@@ -58,4 +60,9 @@
     background-color: #A8E6CF; /* Fondo verde menta */
     border-radius: 10px; /* Bordes redondeados */
     padding: 5px 10px; /* Agrega un poco de espacio interno para que se vea mejor */
+}
+
+.container {
+    max-width: 1400px;  /* Or any other max-width you prefer */
+    margin: 0 auto;
 }

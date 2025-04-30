@@ -32,9 +32,32 @@
     margin-bottom: 10px;
 }
 
+/* Estilo del encabezado del footer */
+.footer-header {
+    background-color: #FFFFFF; /* Blanco */
+    color: #4A90E2; /* Amarillo cálido */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Texto del footer */
+.footer-custom .card-text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* Título del footer */
+.footer-custom .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 .footer-custom:hover {
     transform: none !important;
     transition: none !important;
     box-shadow: none !important;
 }
-

@@ -8,7 +8,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from "./proyecto/Layout";
 import Miperfil from "./proyecto/Miperfil";
 import BusquedaAvan from "./proyecto/BusquedaAvan";
-import Promociones from "./proyecto/promociones";
 import MisTarjetas from "./proyecto/misTarjetas";
 import MetodoPago from "./proyecto/ingresar-tarjeta";
 import AltaProductos from "./proyecto/alta-productos";
@@ -28,7 +27,6 @@ function App() {
           <Route path="/lista-compras" element={<ListaCompras/>}/>
           <Route path="/Miperfil" element={<Miperfil/>}/>
           <Route path="/BusquedaAvan" element={<BusquedaAvan/>}/>
-          <Route path="/Promociones" element={<Promociones/>}/>
           <Route path="/mis-tarjetas" element={<MisTarjetas/>}/>
           <Route path="/metodo-pago" element={<MetodoPago/>}/>
           <Route path="/alta-productos" element={<AltaProductos/>}/>
