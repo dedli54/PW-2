@@ -7,3 +7,28 @@
     color: #2B7B8C;
     background-color: #BFBBB8;
 }
+
+.cards-container {
+    padding: 2rem 0;
+}
+
+.tarjeta-card {
+    transition: transform 0.2s ease-in-out;
+    height: 100%;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tarjeta-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.tarjeta-card .card-body {
+    padding: 1.5rem;
+}
+
+.g-4 {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+}

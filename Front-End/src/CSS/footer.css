@@ -31,3 +31,10 @@
     font-weight: bold;
     margin-bottom: 10px;
 }
+
+.footer-custom:hover {
+    transform: none !important;
+    transition: none !important;
+    box-shadow: none !important;
+}
+

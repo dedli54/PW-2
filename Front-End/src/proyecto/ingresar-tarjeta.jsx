@@ -9,25 +9,44 @@ function MetodoPago(){
     const[numero, setNumero] = useState("");
     const[clave, setClave] = useState(0);
     const[fecha, setFecha] = useState("");
-    const [year, month] = fecha.split("-");
-    const venc = new Date(Number(year), Number(month) - 1, 1);
 
     const handleAdd = () => {
-        const usuario = JSON.parse(localStorage.getItem('sesion'));
-        const user = usuario.id;
-        axios.post("http://localhost:3000/tarjetas", {
-            owner: nombre,
-            number: numero,
-            cvv: clave,
-            expiry: venc,
-            userId: user
-       })
-       .then(response => {
-            alert("Tarjeta agregada correctamente.");
-       })
-       .catch(error => {
-        console.error("Error al agregar tarjeta:", error.response);
-        });
+        // Add validation
+        if (!nombre || !numero || !clave || !fecha) {
+            alert("Por favor complete todos los campos");
+            return;
+        }
+
+        try {
+            const usuario = JSON.parse(localStorage.getItem('sesion'));
+            const user = usuario.id;
+            
+            // Create a valid date from the month input
+            // The fecha value will be in format "YYYY-MM"
+            const venc = new Date(fecha + "-01"); // Add day to make it a valid date
+            
+            if (isNaN(venc.getTime())) {
+                throw new Error("Fecha inválida");
+            }
+
+            axios.post("http://localhost:3000/tarjetas", {
+                owner: nombre,
+                number: numero,
+                cvv: clave,
+                expiry: venc.toISOString(), // Convert to ISO string format
+                userId: user
+            })
+            .then(response => {
+                alert("Tarjeta agregada correctamente.");
+            })
+            .catch(error => {
+                console.error("Error al agregar tarjeta:", error.response);
+                alert("Error al agregar la tarjeta. Por favor verifique los datos.");
+            });
+        } catch (error) {
+            console.error("Error:", error);
+            alert("Error en el formato de la fecha. Por favor verifique los datos.");
+        }
     };
     
     return (
