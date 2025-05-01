@@ -12,6 +12,7 @@ import MisTarjetas from "./proyecto/misTarjetas";
 import MetodoPago from "./proyecto/ingresar-tarjeta";
 import AltaProductos from "./proyecto/alta-productos";
 import NuevaCategoria from "./proyecto/NuevaCategoria";
+import Carrito from "./proyecto/Carrito";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/metodo-pago" element={<MetodoPago/>}/>
           <Route path="/alta-productos" element={<AltaProductos/>}/>
           <Route path="/nueva-categoria" element={<NuevaCategoria/>}/>
+          <Route path="/carrito" element={<Carrito/>}/>
         </Route>
 
         {/* Si agregas más rutas*/}

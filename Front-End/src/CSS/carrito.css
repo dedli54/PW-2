@@ -1,0 +1,23 @@
+.cart-container {
+    min-height: 60vh;
+}
+
+.cart-container table {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cart-container th {
+    background-color: #4A90E2;
+    color: white;
+}
+
+.cart-container td {
+    vertical-align: middle;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+} 

@@ -27,6 +27,7 @@ function BarraNav() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">  
                         <Nav.Link href="./BusquedaAvan" className="text-decoration-none">Búsqueda avanzada</Nav.Link>
+                        <Nav.Link href="./Carrito" className="text-decoration-none">Carrito</Nav.Link>
                         <NavDropdown title="Información personal" id="basic-nav-dropdown" className="text-decoration-none">
                             <NavDropdown.Item href="./Miperfil" className="text-decoration-none">Mi perfil</NavDropdown.Item>
                             <NavDropdown.Item href="./mis-tarjetas" className="text-decoration-none">Mis tarjetas</NavDropdown.Item>
