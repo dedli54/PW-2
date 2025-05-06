@@ -37,7 +37,7 @@ button {
 }
 
 button:hover {
-    background-color: #A8E6CF; /* Verde menta al pasar el mouse */
+    background-color: #cccccc; /* gris al pasar el mouse */
     color: #333333; /* Texto negro suave */
 }
 
@@ -48,6 +48,6 @@ button:hover {
 }
 
 .coustome-link:hover {
-    color: #A8E6CF; /* Verde menta */
+    color: #FFFFFF; /* Blanco */
     text-decoration: underline;
 }

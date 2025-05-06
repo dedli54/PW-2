@@ -57,8 +57,11 @@ button.coustome-link {
 }
 
 button.coustome-link:hover {
-    background-color: #A8E6CF; /* Verde menta al pasar el mouse */
+    background-color: #FFFFFF; /* Fondo blanco */
     color: #333333; /* Texto negro suave */
+    transform: translateY(5px); /* Desplaza el botón hacia abajo */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transición suave */
+    border: 2px solid #4A90E2; /* Borde azul claro */
 }
 
 p {

@@ -53,53 +53,75 @@ function Miperfil(){
         console.log("Datos del usuario:", usuario.id, name, lastName);
     };
 
-    return(
-    <>
-    <div className="contenedor-grande">
-        <div className="contenedor">
-            <div className="row">
-                <h2 className="col-4">Información de usuario</h2>
-                <div className="col-6">
-                    <FloatingLabel controlId="floatingName" label="Nombre" className="mb-3" id="Nombre">
-                        <Form.Control type="text" placeholder="Nombre de usuario"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}/>
-                    </FloatingLabel>
-                    <FloatingLabel controlId="floatinglastName" label="Apellidos" className="mb-3" id="Apellidos">
-                        <Form.Control type="text" placeholder="Apellidos" 
-                        value={lastName}
-                        onChange={(e) => setLastName(e.target.value)}/>
-                    </FloatingLabel>
-                    <br />
-                    <FloatingLabel controlId="floatingEmail" label="Correo electrónico" className="mb-3" id="Correo">
-                        <Form.Control type="email" placeholder="name@example.com" 
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}/>
-                    </FloatingLabel>
-                    <FloatingLabel controlId="floatingPassword" label="Password" className="mb-3" id="Clave">
-                        <Form.Control type="password" placeholder="Contraseña" 
-                        value={pass}
-                        onChange={(e) => setPass(e.target.value)}/>
-                    </FloatingLabel>
-                    <br />
-                    <Button className="coustome-link" href={"/Metodo-Pago"}>Ingresar método de pago</Button>
-                    <br />
-                    <br />
-                    <Button href={"/alta-productos"} className="coustome-link">Agregar producto</Button>
-                    <br />
-                    <br />
-                    <Button href={"/nueva-categoria"} className="coustome-link">Agregar Categoría</Button>
-                    <br />
-                    <br />
-                    <Button id="btnCambios" className="coustome-link" onClick={handleUpdate}>Aceptar cambios</Button>
-                    <br/>
-                    <br/>
-                    <Button href={"/lista-compras"} className="coustome-link">Cancelar</Button>
-                </div>
+    return (
+        <>
+            <div className="contenedor-grande">
+                
+                    <div className="row mb-4">
+                        <h2 className="col-12 text-center">Información de usuario</h2>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-6">
+                            <FloatingLabel controlId="floatingName" label="Nombre" className="mb-3">
+                                <Form.Control
+                                    type="text"
+                                    placeholder="Nombre de usuario"
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
+                                />
+                            </FloatingLabel>
+                        </div>
+                        <div className="col-md-6">
+                            <FloatingLabel controlId="floatinglastName" label="Apellidos" className="mb-3">
+                                <Form.Control
+                                    type="text"
+                                    placeholder="Apellidos"
+                                    value={lastName}
+                                    onChange={(e) => setLastName(e.target.value)}
+                                />
+                            </FloatingLabel>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-6">
+                            <FloatingLabel controlId="floatingEmail" label="Correo electrónico" className="mb-3">
+                                <Form.Control
+                                    type="email"
+                                    placeholder="name@example.com"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                />
+                            </FloatingLabel>
+                        </div>
+                        <div className="col-md-6">
+                            <FloatingLabel controlId="floatingPassword" label="Contraseña" className="mb-3">
+                                <Form.Control
+                                    type="password"
+                                    placeholder="Contraseña"
+                                    value={pass}
+                                    onChange={(e) => setPass(e.target.value)}
+                                />
+                            </FloatingLabel>
+                        </div>
+                    </div>
+                    <div className="row text-center mt-4">
+                        <div className="col-md-4">
+                            <Button href={"/alta-productos"} className="coustome-link w-100">Agregar producto</Button>
+                        </div>
+                        <div className="col-md-4">
+                            <Button href={"/nueva-categoria"} className="coustome-link w-100">Agregar Categoría</Button>
+                        </div>
+                        <div className="col-md-4">
+                            <Button id="btnCambios" className="coustome-link w-100" onClick={handleUpdate}>Aceptar cambios</Button>
+                        </div>
+                    </div>
+                    <div className="row text-center mt-3">
+                        <div className="col-md-12">
+                            <Button href={"/lista-compras"} className="coustome-link w-100">Cancelar</Button>
+                        </div>
+                    </div>
             </div>
-        </div>
-    </div>
-    </>
+        </>
     );
 }
 

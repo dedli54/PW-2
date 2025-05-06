@@ -57,7 +57,7 @@
 .navbar-custom .nav-link:hover,
 .navbar-custom .dropdown-item:hover {
     color: #333333; /* Texto negro suave */
-    background-color: #A8E6CF; /* Fondo verde menta */
+    background-color: #FFFFFF; /* Fondo blanco */
     border-radius: 10px; /* Bordes redondeados */
     padding: 5px 10px; /* Agrega un poco de espacio interno para que se vea mejor */
 }
@@ -66,3 +66,4 @@
     max-width: 1400px;  /* Or any other max-width you prefer */
     margin: 0 auto;
 }
+

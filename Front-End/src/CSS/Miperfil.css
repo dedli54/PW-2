@@ -1,25 +1,42 @@
-.contenedor-grande{
+/* Contenedor principal */
+.contenedor-grande {
     padding: 5%;
-}
-.contenedor{
-    display: flex;
-    padding: 3%;
-    align-items: center;
-    justify-content: center;
-    background-color: #f2f2f2;
-    box-shadow: 5px 5px #0D0D0D;
-    border-radius: 3%;
+    background-color: #f9f9f9; /* Fondo claro */
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
 }
 
-.coustome-link{
-    background-color: #2B7B8C;
-    color: #BFBBB8;
-    text-decoration: none;
-    border: none;
+/* Contenedor interno */
+.contenedor {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 30px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-.coustome-link:hover{
-    color: #2B7B8C;
-    background-color: #BFBBB8;
+/* Botones */
+.coustome-link {
+    background-color: #4A90E2; /* Azul claro */
+    color: #FFFFFF; /* Texto blanco */
     border: none;
+    padding: 10px 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.coustome-link:hover {
+    background-color: greenyellow; /* gris */
+    color: #333333; /* Texto negro suave */
+}
+
+/* Títulos */
+h2 {
+    color: #4A90E2; /* Azul claro */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.floating-label {
+    margin-bottom: 15px;
 }

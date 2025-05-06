@@ -5,9 +5,35 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Altura mínima igual a la altura de la ventana */
+  margin: 0; /* Elimina márgenes predeterminados */
+}
+
+main {
+  flex: 1; /* Hace que el contenido principal ocupe el espacio disponible */
+  flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+  margin: 0; /* Elimina márgenes adicionales */
+  padding: 20px; /* Opcional: agrega un poco de espacio interno */
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que la página ocupe toda la altura de la ventana */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.footer-custom {
+  background-color: #4A90E2; /* Azul claro */
+  color: #FFFFFF; /* Texto blanco */
+  text-align: center;
+  padding: 20px;
+  border: none;
+  border-radius: 0;
 }

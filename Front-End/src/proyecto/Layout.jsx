@@ -5,11 +5,14 @@ import { Outlet } from "react-router-dom";
 
 function Layout(){
     return(
-        <>
+        <div className="page-container">
         <BarraNav/>
-        <Outlet/>
+        <main>
+            <Outlet/>
+        </main>
+        
         <Footer/>
-        </>
+        </div>
     );
 }
 
