@@ -15,18 +15,52 @@
 
 /* Botones */
 .coustome-link {
-    background-color: #4A90E2; /* Azul claro */
-    color: #FFFFFF; /* Texto blanco */
-    border: none;
+    background-color: #4A90E2 !important; /* Azul claro */
+    color: #FFFFFF !important; /* Texto blanco */
+    border: 1px solid transparent !important;
     padding: 10px 20px;
     border-radius: 10px; /* Bordes redondeados */
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    text-decoration: none !important;
+    height: 45px; /* Fixed height for all buttons */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: none !important;
+    animation: none !important;
+    margin: 0 !important;
+    line-height: 1 !important;
 }
 
 .coustome-link:hover {
-    background-color: greenyellow; /* gris */
-    color: #333333; /* Texto negro suave */
+    background-color: white !important; /* gris */
+    border: 1px solid #4A90E2 !important;
+    outline: none !important;
+    color: #333333 !important; /* Texto negro suave */
+    text-decoration: none !important;
+    transition: none !important;
+    animation: none !important;
+}
+
+/* Override Bootstrap button transitions */
+.btn {
+    transition: none !important;
+    animation: none !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+}
+
+.btn:hover {
+    transition: none !important;
+    animation: none !important;
+}
+
+/* Prevent button movement on hover */
+#btnCambios, #btnCambios:hover {
+    transform: none !important;
+    transition: none !important;
+    position: relative !important;
+    top: 0 !important;
 }
 
 /* Títulos */
@@ -39,4 +73,11 @@ h2 {
 /* Inputs */
 .floating-label {
     margin-bottom: 15px;
+}
+
+/* Button row spacing */
+.row.text-center {
+    margin-bottom: 1rem !important;
+    display: flex !important;
+    align-items: center !important;
 }

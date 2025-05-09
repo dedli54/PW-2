@@ -44,17 +44,22 @@ router.post("/registro", async (req, res) => {
 //Perfil put
 router.put("/perfil", async (req, res) => {
     try{
-        console.log("EL ID ES: " + req.body.id); // Verifica qué datos llegan al backend
+        console.log("EL ID ES: " + req.body.id); 
         const { id, name, email, pass, lastName } = req.body;
         const usuario = await prisma.usuario.update({
             where: { id },
             data: { name, email, pass, lastName }
         })
-        res.status(201).send({ message: 'Usuario actualizado con éxito' });
-        return res.json(usuario)
+        
+        
+        return res.status(201).json({
+            message: 'Usuario actualizado con éxito',
+            usuario
+        });
+        
     }catch(error){
         console.error(error.message);
-        res.status(500).send({ error: 'Error al actualizar usuario', details: error.message });
+        res.status(500).json({ error: 'Error al actualizar usuario', details: error.message });
     }
 })
 
