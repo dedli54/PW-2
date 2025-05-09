@@ -1,7 +1,7 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import { Navbar, Nav, NavDropdown, Col, Row, Button } from "react-bootstrap";
+import { Navbar, Nav, Col, Row, Button } from "react-bootstrap";
 import icon from "../CSS/images/list.png"; // Importa la imagen correctamente
 import '../CSS/navbar.css';
 import { useNavigate } from "react-router-dom";

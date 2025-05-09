@@ -24,7 +24,7 @@ function MisTarjetas() {
         };
         
         obtenerTarjetas();
-    }, []);
+    }, [user]);
     
     return (
         <Container className="cards-container">

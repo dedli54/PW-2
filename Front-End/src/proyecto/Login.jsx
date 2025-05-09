@@ -1,5 +1,5 @@
 import React, {useState } from "react";
-import { Navigate, Link} from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import '../CSS/login.css';
 import '../CSS/bootstrapCSS/bootstrap.css';
 import icono from '../CSS/images/list.png';
