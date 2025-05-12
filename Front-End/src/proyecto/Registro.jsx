@@ -93,8 +93,16 @@ function Registro(){
                             />
                         </FloatingLabel>
                         <div className="text-center">
-                            <Button onClick={sendDatos} className="coustome-link">Registrar</Button>
+                            <Button 
+                                onClick={sendDatos} 
+                                className="coustome-link"
+                                as="a"
+                                style={{ display: 'inline-block', width: 'auto' }}
+                            >
+                                Registrar
+                            </Button>
                         </div>
+                        <br />
                         <p>¿Ya tienes cuenta?</p>
                         <div className="text-center">
                             <Button href="/Login" className="coustome-link">Iniciar sesión</Button>

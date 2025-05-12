@@ -16,68 +16,79 @@ function Login(){
     const [loggedIn, setLoggedIn] = useState(false);
 
 
-    const handleLogin = () =>{
-        if(!email || !pass){
+    const handleLogin = () => {
+        if (!email || !pass) {
             setMessage("Favor de completar los campos");
             return;
-        } else{
+        } else {
             axios.post("http://localhost:3000/login", {
-    email: email, 
-    pass: pass
-})
-.then((data) => {
-    console.log(data);
-    if (data.data.success && data.data.usuario) { // Validar que 'usuario' no sea null
-        setMessage(data.data.message);
-        localStorage.setItem('sesion', JSON.stringify(data.data.usuario));
-        console.log("Inicio de sesión exitoso");
-        setLoggedIn(true);
-    } else {
-        setMessage("Credenciales incorrectas o datos incompletos");
-        setLoggedIn(false);
-    }
-})
-.catch((error) => {
-    setMessage(`Error al iniciar sesión: ${error.message}`);
-});
+                email: email,
+                pass: pass
+            })
+                .then((data) => {
+                    console.log(data);
+                    if (data.data.success && data.data.usuario) { // Validar que 'usuario' no sea null
+                        setMessage(data.data.message);
+                        localStorage.setItem('sesion', JSON.stringify(data.data.usuario));
+                        console.log("Inicio de sesión exitoso");
+                        setLoggedIn(true);
+                    } else {
+                        setMessage("Credenciales incorrectas o datos incompletos");
+                        setLoggedIn(false);
+                    }
+                })
+                .catch((error) => {
+                    setMessage(`Error al iniciar sesión: ${error.message}`);
+                });
             console.log("loggedIn:", loggedIn);
             return;
         }
     };
 
-    if(loggedIn){
-        return <Navigate to = "/lista-compras" />;
+    if (loggedIn) {
+        return <Navigate to="/lista-compras" />;
     }
 
-    return(
+    return (
         <>
-    <div className="image">
-    <div className="fondo">
-        <h1>Chopin List</h1>
-        <img src={icono} alt="icono" height={100} width={100} />
-        <h2>Iniciar sesión</h2>
-        <FloatingLabel controlId="floatingEmail" className="FloatingInput" label="Correo electrónico">
-            <Form.Control
-                type="email"
-                placeholder="name@example.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-            />
-        </FloatingLabel>
-        <FloatingLabel controlId="floatingPassword" className="FloatingInput" label="Contraseña">
-            <Form.Control
-                type="password"
-                placeholder="Password"
-                value={pass}
-                onChange={(e) => setPass(e.target.value)}
-            />
-        </FloatingLabel>
-        <Button onClick={handleLogin} className="coustome-link">Iniciar Sesión</Button>
-        <p>¿Aún no tienes tu cuenta?</p>
-        <Button href="/registro" className="coustome-link">Regístrate aquí</Button>
-        {message && <p>{message}</p>}
-    </div>
-</div>
+            <div className="image">
+                <div className="fondo">
+                    <h1>Chopin List</h1>
+                    <img src={icono} alt="icono" height={100} width={100} />
+                    <h2>Iniciar sesión</h2>
+                    <FloatingLabel controlId="floatingEmail" className="FloatingInput" label="Correo electrónico">
+                        <Form.Control
+                            type="email"
+                            placeholder="name@example.com"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                    </FloatingLabel>
+                    <FloatingLabel controlId="floatingPassword" className="FloatingInput" label="Contraseña">
+                        <Form.Control
+                            type="password"
+                            placeholder="Password"
+                            value={pass}
+                            onChange={(e) => setPass(e.target.value)}
+                        />
+                    </FloatingLabel>
+                    <Button
+                        onClick={handleLogin}
+                        className="coustome-link"
+                        as="a" 
+                        style={{ display: 'inline-block', width: 'auto' }} 
+                    >
+                        Iniciar Sesión
+                    </Button>
+                    <br />
+                    <p>¿Aún no tienes tu cuenta?</p>
+                    
+                    <Button href="/registro" className="coustome-link">Regístrate aquí</Button>
+                    <br />
+                    {message && <p>{message}</p>}
+                    
+                </div>
+            </div>
         </>
     );
 }

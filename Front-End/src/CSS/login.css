@@ -34,20 +34,30 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #cccccc; /* gris al pasar el mouse */
-    color: #333333; /* Texto negro suave */
-}
-
-.coustome-link {
-    color: #4A90E2; /* Azul claro */
     text-decoration: none;
     font-weight: bold;
 }
 
+button:hover {
+    background-color: #357ABD; /* Azul más oscuro al pasar el mouse */
+    color: #FFFFFF; /* Mantener texto blanco */
+}
+
+.coustome-link {
+    background-color: #4A90E2; /* Azul claro */
+    color: #FFFFFF; /* Texto blanco */
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
 .coustome-link:hover {
-    color: #FFFFFF; /* Blanco */
-    text-decoration: underline;
+    background-color: #357ABD; /* Azul más oscuro al pasar el mouse */
+    color: #FFFFFF; /* Mantener texto blanco */
+    text-decoration: none;
 }
