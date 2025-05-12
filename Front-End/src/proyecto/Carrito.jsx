@@ -70,9 +70,19 @@ function Carrito() {
             {cartItems.length === 0 ? (
                 <div className="text-center py-4">
                     <h4>Tu carrito está vacío</h4>
-                    <Button href="/lista-compras" variant="primary" className="mt-3">
-                        Continuar Comprando
-                    </Button>
+                    <br />
+                    <div className="row">
+                        <div className="col"></div> 
+                        <div className="col-2">
+                            <Button 
+                                href="/lista-compras" 
+                                className="coustome-link w-100"
+                            >
+                                Continuar Comprando
+                            </Button>
+                        </div>
+                        <div className="col"></div> 
+                    </div>
                 </div>
             ) : (
                 <>
@@ -134,4 +144,4 @@ function Carrito() {
     );
 }
 
-export default Carrito; 
+export default Carrito;

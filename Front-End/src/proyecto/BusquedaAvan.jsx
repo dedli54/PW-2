@@ -85,10 +85,21 @@ function BusquedaAvan() {
               onChange={(e) => setCategoriaProducto(e.target.value)}
             />
           </Form.Group>
-          <div className='boton'>
-            <Button onClick={handleSubmit} type="submit" className='coustome-link'>Buscar</Button>
-          </div>
         </Row>
+        
+        {/* Move the button outside the Row and make it full-width */}
+        <div className='boton'>
+          <br />
+          <Button 
+            onClick={handleSubmit} 
+            type="submit" 
+            className='coustome-link w-100'
+          >
+            Buscar
+          </Button>
+          <br />
+
+        </div>
       </Form>
 
       {resultado && (

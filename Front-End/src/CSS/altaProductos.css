@@ -8,3 +8,20 @@
 .coustome-link{
     margin: 2%;
 }
+
+.contenedor img{
+    width: 100%;
+    height: 100%;
+}
+.contenedor img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.contenedor h1{
+    font-size: 2rem;
+    color: #000;
+}
+.contenedor h2{
+    font-size: 1.5rem;
+    color: #000;
+}       

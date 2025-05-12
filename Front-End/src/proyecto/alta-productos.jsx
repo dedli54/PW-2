@@ -120,21 +120,17 @@ function AltaProductos() {
                         </Form.Select>
                         <Form.Control.Feedback>Completo</Form.Control.Feedback>
                     </Form.Group>
-                    
-                    <div className='boton'>
-                        <Button type="submit" className='coustome-link'>
-                            Agregar
-                        </Button>
-                        
-                        <Button 
-                            type="button" 
-                            href={"/Miperfil"} 
-                            className='coustome-link'
-                        >
-                            Regresar
-                        </Button>
-                    </div>
                 </Row>
+                
+                <div className='boton'>
+                    <Button type="submit" className='coustome-link w-100 mb-2'>
+                        Agregar
+                    </Button>
+                    <br />
+                    <Button type="button" href={"/Miperfil"} className='coustome-link w-100'>
+                        Regresar
+                    </Button>
+                </div>
             </Form>
         </div>
     );

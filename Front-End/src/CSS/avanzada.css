@@ -9,3 +9,24 @@
 .boton{
     margin: 1%;
 }
+
+/* Prevent button movement/animation when clicked */
+.boton .coustome-link,
+.boton .coustome-link:active,
+.boton .coustome-link:hover,
+.boton .coustome-link:focus {
+    transform: none !important;
+    transition: none !important;
+    position: relative !important;
+    top: 0 !important;
+    animation: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Override Bootstrap's button focus and active states */
+.btn:active, 
+.btn:focus {
+    box-shadow: none !important;
+    transform: none !important;
+}

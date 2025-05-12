@@ -23,7 +23,6 @@ function BarraNav() {
                     <img src={icon} alt="Shopping logo" width={30} height={30} className="d-inline-block align-top" />
                 </Navbar.Brand>
                 <Navbar.Brand href="./lista-compras" className="text-decoration-none">Chopin List</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">  
                         <Nav.Link href="./BusquedaAvan" className="text-decoration-none">Búsqueda avanzada</Nav.Link>
