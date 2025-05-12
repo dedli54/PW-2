@@ -12,6 +12,7 @@ function Miperfil(){
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [lastName, setLastName] = useState('');
+    // eslint-disable-next-line no-unused-vars
     const [cambios, setCambios] = useState(false);
 
     //Cargar datos

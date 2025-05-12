@@ -37,6 +37,7 @@ function Registro(){
     }
 
     //Componente de registro exitoso
+    // eslint-disable-next-line no-unused-vars
     const RegistroExitosoComponent = () =>(
         <div className="">
             <h2>Registro completo</h2>
